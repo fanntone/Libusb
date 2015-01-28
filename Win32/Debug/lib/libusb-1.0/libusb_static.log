@@ -1,0 +1,44 @@
+﻿Build started 2015/1/27 下午 02:47:29.
+     1>Project "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\libusb_static.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         D:\_App\VS12\VC\bin\CL.exe /c /I. /I..\libusb /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D _WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\\" /Fd"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\vc120.pdb" /Gd /TC /analyze /analyze:pluginD:\_App\VS12\VC\\bin\localespc.dll /errorReport:prompt   /analyze:quiet ..\libusb\core.c ..\libusb\descriptor.c ..\libusb\io.c ..\libusb\os\poll_windows.c ..\libusb\sync.c ..\libusb\os\threads_windows.c ..\libusb\os\windows_usb.c
+         core.c
+         descriptor.c
+         io.c
+         poll_windows.c
+         sync.c
+         threads_windows.c
+         windows_usb.c
+     1>..\libusb\os\windows_usb.c(722): warning C4996: 'GetVersionExW': was declared deprecated
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : see declaration of 'GetVersionExW'
+         Running Code Analysis for C/C++...
+         Generating Code...
+       Lib:
+         D:\_App\VS12\VC\bin\Lib.exe /OUT:"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0.lib" /NOLOGO "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\core.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\descriptor.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\io.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\poll_windows.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\sync.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\threads_windows.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0\windows_usb.obj"
+         libusb_static.vcxproj -> C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\lib\libusb-1.0.lib
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\core.c(503): warning C6308: 'realloc' might return null pointer: assigning null pointer to 'discdevs', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\io.c(1875): warning C6386: Buffer overrun while writing to 'fds':  the writable size is 'sizeof((*fds))*nfds' bytes, but '16' bytes might be written.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\poll_windows.c(130): warning C6387: 'Temp_value_#67' could be '0':  this does not adhere to the specification for the function 'GetProcAddress'. 
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\poll_windows.c(142): warning C28112: A variable (compat_spinlock) which is accessed via an Interlocked function must always be accessed via an Interlocked function. See line 126:  It is not always safe to access a variable which is accessed via the Interlocked* family of functions in any other way.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\poll_windows.c(232): warning C6387: 'poll_fd[i].handle' could be '0':  this does not adhere to the specification for the function 'CloseHandle'. 
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\poll_windows.c(240): warning C28112: A variable (compat_spinlock) which is accessed via an Interlocked function must always be accessed via an Interlocked function. See line 211:  It is not always safe to access a variable which is accessed via the Interlocked* family of functions in any other way.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\poll_windows.c(406): warning C6387: 'poll_fd[_index].handle' could be '0':  this does not adhere to the specification for the function 'CloseHandle'. 
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(145): warning C6053: The prior call to '_snprintf' might not zero-terminate string 'err_string'.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(157): warning C6385: Reading invalid data from 'err_string':  the readable size is '256' bytes, but '-1' bytes may be read.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(158): warning C6386: Buffer overrun while writing to 'err_string':  the writable size is '256' bytes, but '-1' bytes might be written.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(507): warning C6387: 'str' could be '0':  this does not adhere to the specification for the function 'memcpy'. See line 439 for an earlier location where this can occur
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(794): warning C6258: Using TerminateThread does not allow proper thread clean up.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(722): warning C28159: Consider using 'IsWindows*' instead of 'GetVersionExW'. Reason: Deprecated. Use VerifyVersionInfo* or IsWindows* macros from VersionHelpers.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(1408): warning C6308: 'realloc' might return null pointer: assigning null pointer to 'unref_list', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.
+     1>c:\users\fann\downloads\libusb-1.0.9\libusb\os\windows_usb.c(1541): warning C6258: Using TerminateThread does not allow proper thread clean up.
+     1>Done Building Project "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\libusb_static.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.75

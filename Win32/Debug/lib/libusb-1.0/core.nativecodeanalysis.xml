@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DEFECTS><DEFECT><SFA><FILEPATH>c:\users\fann\downloads\libusb-1.0.9\libusb\</FILEPATH><FILENAME>core.c</FILENAME><LINE>503</LINE><COLUMN>19</COLUMN></SFA><DEFECTCODE>6308</DEFECTCODE><DESCRIPTION>'realloc' might return null pointer: assigning null pointer to 'discdevs', which is passed as an argument to 'realloc', will cause the original memory block to be leaked.</DESCRIPTION><FUNCTION>discovered_devs_append</FUNCTION><DECORATED>discovered_devs_append</DECORATED><FUNCLINE>487</FUNCLINE><PATH/></DEFECT></DEFECTS>

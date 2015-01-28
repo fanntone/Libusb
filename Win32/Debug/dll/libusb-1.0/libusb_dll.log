@@ -1,0 +1,32 @@
+﻿Build started 2015/1/27 下午 02:45:29.
+     1>Project "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\libusb_dll.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         D:\_App\VS12\VC\bin\CL.exe /c /I. /I..\libusb /Zi /nologo /W3 /WX- /Od /Oy- /D _WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\\" /Fd"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\libusb\core.c ..\libusb\descriptor.c ..\libusb\io.c ..\libusb\os\poll_windows.c ..\libusb\sync.c ..\libusb\os\threads_windows.c ..\libusb\os\windows_usb.c
+         core.c
+         descriptor.c
+         io.c
+         poll_windows.c
+         sync.c
+         threads_windows.c
+         windows_usb.c
+     1>..\libusb\os\windows_usb.c(722): warning C4996: 'GetVersionExW': was declared deprecated
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : see declaration of 'GetVersionExW'
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\libusb-1.0.res" ..\libusb\libusb-1.0.rc 
+       Link:
+         D:\_App\VS12\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"..\libusb\libusb-1.0.def" /ASSEMBLYRESOURCE:"libusb-1.0.rc" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0.lib" /MACHINE:X86 /SAFESEH /DLL "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\libusb-1.0.res"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\core.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\descriptor.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\io.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\poll_windows.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\sync.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\threads_windows.obj"
+         "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0\windows_usb.obj"
+            Creating library C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0.lib and object C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0.exp
+         libusb_dll.vcxproj -> C:\Users\Fann\Downloads\libusb-1.0.9\msvc\..\Win32\Debug\dll\libusb-1.0.dll
+     1>Done Building Project "C:\Users\Fann\Downloads\libusb-1.0.9\msvc\libusb_dll.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.77
